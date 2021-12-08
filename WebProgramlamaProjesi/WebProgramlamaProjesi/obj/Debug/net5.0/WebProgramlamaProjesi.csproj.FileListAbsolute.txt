@@ -39,3 +39,4 @@ C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\W
 C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\WebProgramlamaProjesi.genruntimeconfig.cache
 C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\WebProgramlamaProjesi.csproj.CopyComplete
 C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\Razor\Views\Urunler\Index.cshtml.g.cs
+C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\WebProgramlamaProjesi.pdb
