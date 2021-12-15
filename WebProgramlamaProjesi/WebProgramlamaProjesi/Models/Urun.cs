@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
 namespace WebProgramlamaProjesi.Models
 {
     public class Urun
     {
+        [Key]
         public int UrunId { get; set; }
 
         public string Ad { get; set; }
