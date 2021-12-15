@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using WebProgramlamaProjesi.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -12,5 +13,13 @@ namespace WebProgramlamaProjesi.Data
             : base(options)
         {
         }
+
+        public DbSet<Urun> Urun{ get; set; }
+        
+        public DbSet<Kategoriler> Kategoriler{ get; set; }
+        
+        public DbSet<Kullanici> Kullanici{ get; set; }
+        
+        public DbSet<Yorum> Yorum{ get; set; }
     }
 }
