@@ -253,8 +253,8 @@ namespace WebProgramlamaProjesi.Data.Migrations
                     b.Property<string>("KullaniciAdres")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TelefonNo")
-                        .HasColumnType("int");
+                    b.Property<string>("TelefonNo")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("KullaniciID");
 
