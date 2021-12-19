@@ -3,34 +3,34 @@
 @{
     ViewData["Title"] = "Register";
 }
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Kaydet">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="GercekAd" class="control-label">Ad</label>
-                <input asp-for="GercekAd" class="form-control" />
-                <span asp-validation-for="GercekAd" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="GercekSoyad" class="control-label">Soyad</label>
-                <input asp-for="GercekSoyad" class="form-control" />
-                <span asp-validation-for="GercekSoyad" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Sifre" class="control-label"></label>
-                <input asp-for="Sifre" class="form-control" />
-                <span asp-validation-for="Sifre" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Kaydet" class="btn btn-primary" />
-            </div>
-        </form>
+<div class="container">
+    <div class="col-md-4 col-lg-4 text-center centered rounded-lg" style="border: 4px solid orange">
+            <form asp-action="Kaydet">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Email" class="control-label">E-mail</label>
+                    <input asp-for="Email" class="form-control rounded-lg" style="border: 2px solid black" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="GercekAd" class="control-label">Ad</label>
+                    <input asp-for="GercekAd" class="form-control rounded-lg" style="border: 2px solid black" />
+                    <span asp-validation-for="GercekAd" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="GercekSoyad" class="control-label">Soyad</label>
+                    <input asp-for="GercekSoyad" class="form-control rounded-lg" style="border: 2px solid black" />
+                    <span asp-validation-for="GercekSoyad" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Sifre" class="control-label">Şifre</label>
+                    <input asp-for="Sifre" class="form-control rounded-lg" style="border: 2px solid black" />
+                    <span asp-validation-for="Sifre" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Kaydet" class="btn btn-primary" />
+                </div>
+            </form>
     </div>
 </div>
 

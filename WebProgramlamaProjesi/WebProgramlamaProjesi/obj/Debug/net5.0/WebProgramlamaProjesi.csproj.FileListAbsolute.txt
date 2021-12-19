@@ -832,3 +832,4 @@ C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\W
 C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\bin\Debug\net5.0\runtimes\win-arm64\lib\net5.0\dotnet-aspnet-codegenerator-design.exe
 C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\Razor\Views\Kullanici\Login.cshtml.g.cs
 C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\Razor\Views\Kullanici\Register.cshtml.g.cs
+C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\Razor\Views\Kullanici\Basarili.cshtml.g.cs
