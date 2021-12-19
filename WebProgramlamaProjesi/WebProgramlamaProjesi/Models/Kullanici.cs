@@ -10,11 +10,17 @@ namespace WebProgramlamaProjesi.Models
     {
         [Key]
         public int KullaniciID { get; set; }
-        public string KullaniciAdi { get; set; }
+        [EmailAddress]
+        [Required]
+        public string Email { get; set; }
+        [Required]
         public string GercekAd { get; set; }
+        [Required]
         public string GercekSoyad { get; set; }
-        public string KullaniciAdres { get; set; }
-        public string TelefonNo { get; set; }
-
+        public string? KullaniciAdres { get; set; }
+        public string? TelefonNo { get; set; }
+        [Required]
+        [MinLength(3)]
+        public string Sifre { get; set; }
     }
 }

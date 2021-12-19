@@ -1,6 +1,39 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model WebProgramlamaProjesi.Models.Kullanici
+
 @{
+    ViewData["Title"] = "Register";
 }
-<h1>UYE OLMA SAYFASI</h1>
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Kaydet">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GercekAd" class="control-label">Ad</label>
+                <input asp-for="GercekAd" class="form-control" />
+                <span asp-validation-for="GercekAd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="GercekSoyad" class="control-label">Soyad</label>
+                <input asp-for="GercekSoyad" class="form-control" />
+                <span asp-validation-for="GercekSoyad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Sifre" class="control-label"></label>
+                <input asp-for="Sifre" class="form-control" />
+                <span asp-validation-for="Sifre" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Kaydet" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
