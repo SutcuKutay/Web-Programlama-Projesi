@@ -12,7 +12,29 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
+#nullable restore
+#line 1 "C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\Areas\Identity\Pages\_ViewImports.cshtml"
+using Microsoft.AspNetCore.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 2 "C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\Areas\Identity\Pages\_ViewImports.cshtml"
+using WebProgramlamaProjesi.Areas.Identity;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "C:\Users\lenovo\Documents\GitHub\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\Areas\Identity\Pages\_ViewImports.cshtml"
+using WebProgramlamaProjesi.Areas.Identity.Pages;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"330a635f71f47285eacb2484685031fe87558a73", @"/Areas/Identity/Pages/_ViewStart.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"4851fba9a7a8e467a60102e28485326b3cbbbc5c", @"/Areas/Identity/Pages/_ViewImports.cshtml")]
     public class Areas_Identity_Pages__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

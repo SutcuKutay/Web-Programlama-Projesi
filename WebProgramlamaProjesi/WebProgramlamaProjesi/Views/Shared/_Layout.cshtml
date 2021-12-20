@@ -16,7 +16,7 @@
     <link rel="icon" type="image/x-icon" href="~/assets/favicon.ico" />
 </head>
 <body>
-    <header class="header bg-white">
+    <header class="header bg-warning">
         <div>
             <div class="container">
                 <div class="row">
@@ -30,12 +30,7 @@
                                     <li><a href="#"><img src="~/img/türkBayrak.jpg"></a></li>
                                 </ul>
                             </div>
-                            <div class="header__top__right__auth">
-                                <a asp-area="" asp-controller="Kullanici" asp-action="Login"><i class="fa fa-user"></i> Giriş</a>
-                            </div>
-                            <div class="header__top__right__auth">
-                                <a asp-area="" asp-controller="Kullanici" asp-action="Register"><i class="fa fa-user"></i> Üye Ol</a>
-                            </div>
+                            <partial name="_LoginPartial" />
                         </div>
                     </div>
                 </div>
@@ -62,7 +57,7 @@
                                     <li><a href="./blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="./blog.html">Blog</a></li>
+                            <li><a asp-area="" asp-controller="Blog" asp-action="Index">Blog</a></li>
                             <li><a href="./contact.html">İletişim</a></li>
                         </ul>
                     </nav>

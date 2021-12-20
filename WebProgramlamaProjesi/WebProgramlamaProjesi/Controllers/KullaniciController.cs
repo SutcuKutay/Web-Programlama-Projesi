@@ -5,6 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebProgramlamaProjesi.Data;
 using WebProgramlamaProjesi.Models;
+using Microsoft.AspNetCore.Session;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WebProgramlamaProjesi.Controllers
 {
@@ -28,6 +31,17 @@ namespace WebProgramlamaProjesi.Controllers
         {
             return View();
         }
+        public IActionResult GirisBasarili()
+        {
+            if(HttpContext.Session.GetString("KullaniciID") != null)
+            {
+                return View();
+            }
+            else
+            {
+                return RedirectToAction("Login");
+            }
+        }
         [HttpPost]
         public IActionResult Kaydet(Kullanici user)
         {
@@ -46,7 +60,19 @@ namespace WebProgramlamaProjesi.Controllers
         [HttpPost]
         public IActionResult Giris(Kullanici user)
         {
-            return RedirectToAction("Basarili");
+            Kullanici usr = null;
+            usr = _context.Kullanici.Single(u => u.Email == user.Email && u.Sifre == user.Sifre);
+            if(usr != null)
+            {
+                HttpContext.Session.SetString("KullaniciID", usr.KullaniciID.ToString());
+                HttpContext.Session.SetString("GercekAd", usr.GercekAd.ToString());
+                return RedirectToAction("GirisBasarili");
+            }
+            else
+            {
+                ModelState.AddModelError("", "Email yada şifre yanlış.");
+                return RedirectToAction("Login");
+            }
         }
     }
 }

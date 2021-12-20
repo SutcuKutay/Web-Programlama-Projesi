@@ -1,0 +1,33 @@
+﻿@page
+@model RegisterModel
+@{
+    ViewData["Title"] = "Register";
+}
+<br />
+<br />
+<div class="container">
+    <div class="col-md-4 col-lg-4 text-center centered rounded-lg" style="border: 4px solid orange">
+        <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Input.Email">Email</label>
+                <input asp-for="Input.Email" class="form-control rounded-lg" style="border: 2px solid black" />
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Password">Şifre</label>
+                <input asp-for="Input.Password" class="form-control rounded-lg" style="border: 2px solid black" />
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.ConfirmPassword">Şifre Tekrar</label>
+                <input asp-for="Input.ConfirmPassword" class="form-control rounded-lg" style="border: 2px solid black" />
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Kayıt Ol</button>
+        </form>
+    </div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
