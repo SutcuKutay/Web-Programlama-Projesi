@@ -912,3 +912,10 @@ C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebPrograml
 C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\Razor\Views\Kullanici\GirisBasarili.cshtml.g.cs
 C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\Razor\Views\Kullanici\Login.cshtml.g.cs
 C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\Razor\Views\Kullanici\Register.cshtml.g.cs
+C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\bin\Debug\net5.0\en-US\WebProgramlamaProjesi.resources.dll
+C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\bin\Debug\net5.0\tr-TR\WebProgramlamaProjesi.resources.dll
+C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\WebProgramlamaProjesi.csproj.GenerateResource.cache
+C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\en-US\WebProgramlamaProjesi.resources.dll
+C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\tr-TR\WebProgramlamaProjesi.resources.dll
+C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\WebProgramlamaProjesi.Resources.Views.Shared._Layout.en-US.resources
+C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\WebProgramlamaProjesi.Resources.Views.Shared._Layout.tr-TR.resources
