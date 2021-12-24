@@ -49,10 +49,10 @@ namespace WebProgramlamaProjesi
             });
             services.AddControllers();
 
-            services.AddAuthentication("BasicAuthentication")
-                .AddScheme<AuthenticationSchemeOptions, BasicAuthHandler>("BasicAuthentication", null);
+            //services.AddAuthentication("BasicAuthentication")
+            //    .AddScheme<AuthenticationSchemeOptions, BasicAuthHandler>("BasicAuthentication", null);
 
-            services.AddScoped<IUserService, UserService>();
+            //services.AddScoped<IUserService, UserService>();
 
             services.AddSingleton<SharedViewLocalizer>();
             services.AddDbContext<ApplicationDbContext>(options =>
@@ -73,12 +73,6 @@ namespace WebProgramlamaProjesi
             });
             services.AddControllersWithViews();
             services.AddRazorPages();
-            services.AddAuthorization(options =>
-            {
-                options.FallbackPolicy = new AuthorizationPolicyBuilder()
-                    .RequireAuthenticatedUser()
-                    .Build();
-            });
             services.AddSession(option =>
             {
                 option.IdleTimeout = TimeSpan.FromMinutes(1);
