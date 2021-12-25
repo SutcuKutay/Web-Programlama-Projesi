@@ -1,0 +1,25 @@
+﻿@using Microsoft.AspNetCore.Identity;
+@{var Kullanici = ViewData["Kullanicilar"] as List<IdentityUser>;
+    int i = 0;}
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">ID</th>
+                <th scope="col">KullaniciAdi</th>
+            </tr>
+        </thead>
+        <tbody>
+            @while(i!=Kullanici.Count())
+            { 
+            <tr>
+                <th scope="row">@(i+1)</th>
+                <td>@Kullanici[i].Id.ToString()</td>
+                <td>@Kullanici[i].UserName.ToString()</td>
+            </tr>
+                i++;
+            }
+        </tbody>
+    </table>
+</div>
