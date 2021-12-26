@@ -13,6 +13,5 @@ namespace WebProgramlamaProjesi.Models
         
         public string KategoriAd { get; set; }
 
-
     }
 }

@@ -287,17 +287,15 @@ namespace WebProgramlamaProjesi.Data.Migrations
                     b.Property<int?>("KategoriID")
                         .HasColumnType("int");
 
-                    b.Property<int?>("KullaniciID")
-                        .HasColumnType("int");
-
                     b.Property<int>("Stok")
                         .HasColumnType("int");
+
+                    b.Property<byte[]>("rsm")
+                        .HasColumnType("varbinary(max)");
 
                     b.HasKey("UrunId");
 
                     b.HasIndex("KategoriID");
-
-                    b.HasIndex("KullaniciID");
 
                     b.ToTable("Urun");
                 });
@@ -379,13 +377,7 @@ namespace WebProgramlamaProjesi.Data.Migrations
                         .WithMany()
                         .HasForeignKey("KategoriID");
 
-                    b.HasOne("WebProgramlamaProjesi.Models.Kullanici", "Kullanici")
-                        .WithMany()
-                        .HasForeignKey("KullaniciID");
-
                     b.Navigation("Kategori");
-
-                    b.Navigation("Kullanici");
                 });
 
             modelBuilder.Entity("WebProgramlamaProjesi.Models.Yorum", b =>

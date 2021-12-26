@@ -18,12 +18,11 @@ namespace WebProgramlamaProjesi.Models
 
         public int Stok { get; set; }
 
+        public byte[] rsm { get; set; }
+
         public string Aciklama { get; set; }
 
         [ForeignKey("KategoriID")]
         public Kategoriler Kategori { get; set; }
-
-        [ForeignKey("KullaniciID")]
-        public Kullanici Kullanici { get; set; }
     }
 }

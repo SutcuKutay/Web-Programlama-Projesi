@@ -934,4 +934,4 @@ C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebPrograml
 C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\Razor\Views\Admin\Index.cshtml.g.cs
 C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\Razor\Views\Admin\KullaniciSil.cshtml.g.cs
-C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\Razor\Views\Admin\UrunSil.cshtml.g.cs
+C:\Users\ibrah\Desktop\Web-Programlama-Projesi\WebProgramlamaProjesi\WebProgramlamaProjesi\obj\Debug\net5.0\Razor\Views\UrunController1\Index.cshtml.g.cs

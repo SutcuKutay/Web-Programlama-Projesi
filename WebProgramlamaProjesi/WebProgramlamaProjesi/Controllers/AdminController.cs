@@ -39,23 +39,32 @@ namespace WebProgramlamaProjesi.Controllers
         }
         public IActionResult KullaniciSil()
         {
+            var defaultCultures = new List<CultureInfo>()
+            {
+                new CultureInfo("tr-TR"),
+                new CultureInfo("en-US"),
+            };
+
+            CultureInfo[] cinfo = CultureInfo.GetCultures(CultureTypes.AllCultures);
+            var cultureItems = cinfo.Where(x => defaultCultures.Contains(x))
+                .Select(c => new SelectListItem { Value = c.Name, Text = c.DisplayName })
+                .ToList();
+            ViewData["Cultures"] = cultureItems;
             ViewData["Kullanicilar"] = db.Users.ToList();
             return View();
         }
-        public IActionResult UrunSil()
+        public IActionResult UrunEkle()
         {
-            return View();
+            return RedirectToAction("Index", "UrunController1");
         }
         [HttpPost]
-        public IActionResult SetLanguage(string culture, string returnUrl)
+        public IActionResult Sil(string text1)
         {
-            Response.Cookies.Append(
-                CookieRequestCultureProvider.DefaultCookieName,
-                CookieRequestCultureProvider.MakeCookieValue(new RequestCulture(culture)),
-                new CookieOptions { Expires = DateTimeOffset.UtcNow.AddYears(1) }
-            );
+            db.Users.Remove(db.Users.Find(text1));
+            db.SaveChanges();
 
-            return LocalRedirect(returnUrl);
+            return RedirectToAction("KullaniciSil");
         }
+
     }
 }

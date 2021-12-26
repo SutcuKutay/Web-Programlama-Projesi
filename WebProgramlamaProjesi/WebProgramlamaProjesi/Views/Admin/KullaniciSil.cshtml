@@ -11,15 +11,20 @@
             </tr>
         </thead>
         <tbody>
-            @while(i!=Kullanici.Count())
-            { 
-            <tr>
-                <th scope="row">@(i+1)</th>
-                <td>@Kullanici[i].Id.ToString()</td>
-                <td>@Kullanici[i].UserName.ToString()</td>
-            </tr>
+            @while (i != Kullanici.Count())
+            {
+
+                <tr>
+                    <th scope="row">@(i+1)</th>
+                    <td>@Kullanici[i].Id.ToString()</td>
+                    <td>@Kullanici[i].UserName.ToString()</td>
+                </tr>
                 i++;
             }
         </tbody>
     </table>
+    @using (Html.BeginForm())
+    {
+        @Html.TextBox("text1") <button class="bg-info text-capitalize border-dark rounded font-weight-bold" asp-controller="Admin" asp-action="Sil" type="submit"> Sil </button>
+    }
 </div>

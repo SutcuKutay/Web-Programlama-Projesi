@@ -5,11 +5,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Localization;
 using Microsoft.Extensions.Logging;
 using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
 using System.Threading.Tasks;
+using WebProgramlamaProjesi.Data;
 using WebProgramlamaProjesi.Models;
 
 namespace WebProgramlamaProjesi.Controllers
@@ -22,12 +24,15 @@ namespace WebProgramlamaProjesi.Controllers
         //    _localizer = localizer;
         //}
         private readonly ILogger<HomeController> _logger;
+        private ApplicationDbContext db;
 
-        public HomeController(ILogger<HomeController> logger, IStringLocalizer<HomeController> localizer)
+        public HomeController(ILogger<HomeController> logger, IStringLocalizer<HomeController> localizer, ApplicationDbContext tmp)
         {
             _logger = logger;
             _localizer = localizer;
+            db = tmp;
         }
+
 
         public IActionResult Index()
         {
@@ -42,7 +47,7 @@ namespace WebProgramlamaProjesi.Controllers
                 .Select(c => new SelectListItem { Value = c.Name, Text = c.DisplayName })
                 .ToList();
             ViewData["Cultures"] = cultureItems;
-
+            ViewData["Urunler"] = db.Urun.ToList();
             return View();
         }
 
