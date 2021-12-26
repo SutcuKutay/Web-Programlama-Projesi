@@ -13,8 +13,5 @@ namespace WebProgramlamaProjesi.Models
         public int YorumID { get; set; }
 
         public string Metin { get; set; }
-
-        [ForeignKey("KullaniciID")]
-        public Kullanici YorumYapan { get; set; }
     }
 }

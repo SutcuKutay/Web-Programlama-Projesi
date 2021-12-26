@@ -37,6 +37,7 @@ namespace WebProgramlamaProjesi.Controllers
 
             return View();
         }
+        [Authorize(Roles = "admin")]
         public IActionResult KullaniciSil()
         {
             var defaultCultures = new List<CultureInfo>()
@@ -53,6 +54,7 @@ namespace WebProgramlamaProjesi.Controllers
             ViewData["Kullanicilar"] = db.Users.ToList();
             return View();
         }
+        [Authorize(Roles = "admin")]
         public IActionResult UrunEkle()
         {
             return RedirectToAction("Index", "UrunController1");

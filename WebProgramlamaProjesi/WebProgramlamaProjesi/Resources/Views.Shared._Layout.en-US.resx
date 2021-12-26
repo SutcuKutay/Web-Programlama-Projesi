@@ -117,13 +117,31 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="big" xml:space="preserve">
+    <value>Big</value>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
+  </data>
+  <data name="footer1" xml:space="preserve">
+    <value>All Rights Hidden</value>
+  </data>
+  <data name="gun" xml:space="preserve">
+    <value>Day</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="ind" xml:space="preserve">
+    <value>Offer</value>
+  </data>
+  <data name="ozel" xml:space="preserve">
+    <value>Special</value>
+  </data>
   <data name="Pages" xml:space="preserve">
     <value>Pages</value>
+  </data>
+  <data name="sev" xml:space="preserve">
+    <value>Valentines</value>
   </data>
 </root>

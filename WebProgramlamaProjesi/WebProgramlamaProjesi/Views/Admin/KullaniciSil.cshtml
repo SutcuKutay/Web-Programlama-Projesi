@@ -7,7 +7,7 @@
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">ID</th>
-                <th scope="col">KullaniciAdi</th>
+                <th scope="col">@Localizer["kullanici"]</th>
             </tr>
         </thead>
         <tbody>
@@ -25,6 +25,6 @@
     </table>
     @using (Html.BeginForm())
     {
-        @Html.TextBox("text1") <button class="bg-info text-capitalize border-dark rounded font-weight-bold" asp-controller="Admin" asp-action="Sil" type="submit"> Sil </button>
+        @Html.TextBox("text1") <button class="bg-info text-capitalize border-dark rounded font-weight-bold" asp-controller="Admin" asp-action="Sil" type="submit"> @Localizer["del"] </button>
     }
 </div>

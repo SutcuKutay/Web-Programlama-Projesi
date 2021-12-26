@@ -18,8 +18,6 @@ namespace WebProgramlamaProjesi.Data
         
         public DbSet<Kategoriler> Kategoriler{ get; set; }
         
-        public DbSet<Kullanici> Kullanici{ get; set; }
-        
         public DbSet<Yorum> Yorum{ get; set; }
     }
 }

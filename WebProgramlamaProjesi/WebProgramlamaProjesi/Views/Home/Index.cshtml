@@ -6,73 +6,12 @@
     <section class="hero">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <div class="hero__categories">
-                        <div class="hero__categories__all bg-warning">
-                            <i class="fa fa-bars"></i>
-                            <span>Bütün türler</span>
-                        </div>
-                        <ul>
-                            <li><a href="#">Elektronik</a></li>
-                            <li><a href="#">Moda</a></li>
-                            <li><a href="#">Ev, Yaşam, Kırtasiye, Ofis</a></li>
-                            <li><a href="#">Oto, Bahçe, Yapı, Market</a></li>
-                            <li><a href="#">Anne, Bebek, Oyuncak</a></li>
-                            <li><a href="#">Spor, Outdoor</a></li>
-                            <li><a href="#">Kozmetik, Kişisel Bakım</a></li>
-                            <li><a href="#">Süpermarket, Petshop</a></li>
-                            <li><a href="#">Kitap, Müzik, Film, Hobi</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-9">
-                    <div class="hero__search">
-                        <div class="hero__search__form">
-                            <form action="#">
-                                <input type="text" placeholder="Neye ihtiyacın var?">
-                                <button type="submit" class="site-btn bg-warning">Ara</button>
-                            </form>
-                        </div>
-                    </div>
+                <div class="col-lg-12">
                     <div class="hero__item set-bg" data-setbg="img/hero/yag.jpg">
                         <div class="text-white">
-                            <h2>Sevgililer Gününe Özel<br />Büyük İndirim!</h2>
-                            <p>5LT Komili Ayçiçek yağı sadece 199,99TL</p>
-                            <a href="https://www.cimri.com/market/sivi-yag-ve-zeytinyagi/en-ucuz-selin-5-lt-aycicek-yagi-fiyatlari,259" class="primary-btn bg-warning">Satın Al</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="categories">
-        <div class="container">
-            <div class="row">
-                <div class="categories__slider owl-carousel">
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-1.jpg">
-                            <h5><a href="#">Fresh Fruit</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-2.jpg">
-                            <h5><a href="#">Dried Fruit</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-3.jpg">
-                            <h5><a href="#">Vegetables</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-4.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="categories__item set-bg" data-setbg="img/categories/cat-5.jpg">
-                            <h5><a href="#">drink fruits</a></h5>
+                            <h2>@Localizer["komili1"]<br />@Localizer["komili2"]!</h2>
+                            <p>@Localizer["komili3"] ₺</p>
+                            <a href="https://www.cimri.com/market/sivi-yag-ve-zeytinyagi/en-ucuz-selin-5-lt-aycicek-yagi-fiyatlari,259" class="primary-btn bg-warning">@Localizer["buy"]</a>
                         </div>
                     </div>
                 </div>
@@ -85,9 +24,18 @@
             <div class="row featured__filter">
                 @while (urunler.Count() != i)
                 {
+                    string a;
+                    if (urunler[i].Aciklama == null)
+                    {
+                        a = "/img/iphone12.jpg";
+                    }
+                    else
+                    {
+                        a = urunler[i].Aciklama;
+                    }
                     <div class="col-lg-3 col-md-4 col-sm-6 mix oranges fresh-meat">
                         <div class="featured__item">
-                            <div class="featured__item__pic set-bg" data-setbg="">
+                            <div class="featured__item__pic set-bg" data-setbg="@a">
                                 <ul class="featured__item__pic__hover">
                                     <li><a href="#"><i class="fa fa-heart"></i></a></li>
                                     <li><a href="#"><i class="fa fa-retweet"></i></a></li>
@@ -96,7 +44,7 @@
                             </div>
                             <div class="featured__item__text">
                                 <h6><a href="#">@urunler[i].Ad</a></h6>
-                                <h5>@urunler[i].Fiyat.ToString()</h5>
+                                <h5>@urunler[i].Fiyat.ToString() ₺</h5>
                             </div>
                         </div>
                     </div>
@@ -105,21 +53,4 @@
             </div>
         </div>
     </section>
-
-    <div class="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="banner__pic">
-                        <img src="img/banner/banner-1.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="banner__pic">
-                        <img src="img/banner/banner-2.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 </div>

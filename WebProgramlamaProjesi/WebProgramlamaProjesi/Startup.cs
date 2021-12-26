@@ -49,11 +49,6 @@ namespace WebProgramlamaProjesi
             });
             services.AddControllers();
 
-            //services.AddAuthentication("BasicAuthentication")
-            //    .AddScheme<AuthenticationSchemeOptions, BasicAuthHandler>("BasicAuthentication", null);
-
-            //services.AddScoped<IUserService, UserService>();
-
             services.AddSingleton<SharedViewLocalizer>();
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(

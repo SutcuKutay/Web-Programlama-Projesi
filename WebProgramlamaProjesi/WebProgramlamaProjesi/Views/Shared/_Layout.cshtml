@@ -51,18 +51,8 @@
                     <nav class="header__menu">
                         <ul>
                             <li><a asp-area="" asp-controller="Home" asp-action="Index">@Localizer["Home"]</a></li>
-                            <li><a href="./shop-grid.html">Alışveriş</a></li>
-                            <li>
-                                <a href="#">@Localizer["Pages"]</a>
-                                <ul class="header__menu__dropdown">
-                                    <li><a href="./shop-details.html">Shop Details</a></li>
-                                    <li><a href="./shoping-cart.html">Shoping Cart</a></li>
-                                    <li><a href="./checkout.html">Check Out</a></li>
-                                    <li><a href="./blog-details.html">Blog Details</a></li>
-                                </ul>
-                            </li>
                             <li><a asp-area="" asp-controller="Blog" asp-action="Index">Blog</a></li>
-                            <li><a href="./contact.html">@Localizer["Contact"]</a></li>
+                            <li><a asp-controller="Contact" asp-action="Index">@Localizer["Contact"]</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -94,7 +84,7 @@
                         <div class="footer__copyright__text">
                             <p>
                                 Copyright &copy;
-                                <script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır. Designed <i aria-hidden="true"></i> by <a href="https://github.com/SutcuKutay" target="_blank">Kutay Sutcu</a><i aria-hidden="true"></i> and <a href="https://github.com/atfkr" target="_blank">İbrahim Atıf Kuru</a>
+                                <script>document.write(new Date().getFullYear());</script> @Localizer["footer1"]. Designed <i aria-hidden="true"></i> by <a href="https://github.com/SutcuKutay" target="_blank">Kutay Sutcu</a><i aria-hidden="true"></i> and <a href="https://github.com/atfkr" target="_blank">İbrahim Atıf Kuru</a>
                             </p>
                         </div>
                     </div>
